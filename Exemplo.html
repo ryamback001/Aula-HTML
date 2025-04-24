@@ -4,19 +4,73 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>--** desenvolv I **--</title>
+        <style>
+            body {
+                background-image: url('img/LUA.png'); /* Caminho relativo para a imagem */
+                background-position: center;
+                background-attachment: fixed; /* Faz a imagem ficar fixa ao rolar a página */
+                background-size: cover; /* A imagem se ajusta ao tamanho da tela */
+                height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+            }
+
+            /* Marca d'água com imagem */
+            .watermark {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0.1; /* Controle a opacidade da marca d'água */
+                pointer-events: none; /* Impede que a marca d'água interfira na interação com a página */
+            }
+
+            h1 {
+                font-style: normal;
+                color: rgb(12, 23, 53);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                background-color: beige;
+            }
+
+            #paragrafoUnico {
+                font-size: xx-large;
+                color: rgb(57, 97, 207);
+            }
+
+            .minhaclasse {
+                font-size: x-large;
+                color: rgb(103, 112, 136);
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                background-color: beige;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .grid-item {
+                background-color: rgb(72, 139, 141);
+                padding: 10px 20px 10px 20px;
+            }
+
+        </style>
     </head>
     <body>
-        <h1>Satelite Natural Terrestre </h1>
-        <h2>LUA</h2>
+        <!-- Marca d'água -->
+        <div class="watermark">
+            <img src="img/marca-dagua.png" alt="Marca d'água" width="300" height="300">
+        </div>
 
-        <p> 
+        <h1> Satelite Natural Terrestre </h1>
+
+        <h2 id="paragrafoUnico">LUA</h2>
+
+        <p class="minhaclasse"> 
             As fases da Lua são os diferentes aspectos que ela apresenta 
             ao longo de seu ciclo de aproximadamente 29,5 dias, causado pela 
-            ua posição em relação à Terra e ao Sol. Esse ciclo começa com a Lua Nova, 
+            sua posição em relação à Terra e ao Sol. Esse ciclo começa com a Lua Nova, 
             quando a face iluminada está voltada para o Sol e não é visível da Terra. 
-            <br>
-            <br>
-
+            <br><br>
             Em seguida, vem o Crescente, quando uma pequena parte iluminada começa a 
             aparecer. Depois, temos a Quarto Crescente, onde metade da Lua está visível. 
             A Lua Cheia ocorre quando toda a face visível está iluminada. Após isso, 
@@ -24,28 +78,42 @@
             Lua volte à fase Nova. Esse movimento contínuo influencia marés, calendários e 
             até tradições culturais em diversas partes do mundo.
         </p>
-            <ol type="I">
-                <li> Crescente 🌓</li>
-                <li> Minguante 🌙</li>
-                <li> Lua Nova 🌑</li>
-                <li> Lua Cheia 🌕</li>     
-            </ol>
-            <table border = "1">
-                <tr>
-                    <td> Coluna 1 - linha 1 </td>
-                    <td> Coluna 2 - linha 1 </td>
-                    <td> Coluna 3 - linha 1 </td>
-                </tr>    
-                <tr>
-                    <td> Coluna 1 - linha 2 </td>
-                    <td> Coluna 2 - linha 2 </td>
-                    <td> Coluna 3 - linha 2 </td>
-               </tr>    
-               <tr>
-                    <td> Coluna 1 - linha 3 </td>
-                    <td> Coluna 2 - linha 3 </td>
-                    <td> Coluna 3 - linha 3 </td>
-                </tr>              
-            </table>
+
+        <ol type="I">
+            <li> Crescente 🌓</li>
+            <li> Minguante 🌙</li>
+            <li> Lua Nova 🌑</li>
+            <li> Lua Cheia 🌕</li>     
+        </ol>
+
+        <table border="1">
+            <tr>
+                <td> Coluna 1 - linha 1 </td>
+                <td> Coluna 2 - linha 1 </td>
+                <td> Coluna 3 - linha 1 </td>
+            </tr>    
+            <tr>
+                <td> Coluna 1 - linha 2 </td>
+                <td> Coluna 2 - linha 2 </td>
+                <td> Coluna 3 - linha 2 </td>
+            </tr>    
+            <tr>
+                <td> Coluna 1 - linha 3 </td>
+                <td> Coluna 2 - linha 3 </td>
+                <td> Coluna 3 - linha 3 </td>
+            </tr>   
+        </table>
+
+        <br><br>
+
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+
     </body>
 </html>

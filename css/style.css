@@ -1,0 +1,50 @@
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 241, 241);
+
+}
+
+header{
+background-color: #584c4c;
+color: rgb(12, 15, 17);
+text-align: center;
+padding: 20px;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    color: #d4bbbb;
+    padding: 10px;
+
+
+}
+nav a{
+    color: rgb(96, 111, 126);
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+
+
+}
+footer{
+    background-color: #333;
+    color: rgb(100, 97, 94);
+    text-align: center;
+    padding: 10px;
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
