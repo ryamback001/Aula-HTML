@@ -1,50 +1,57 @@
-body{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(224, 241, 241);
-
+/* Corpo da página */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 241, 241);
 }
 
-header{
-background-color: #584c4c70;
-color: rgb(12, 15, 17);
-text-align: center;
-padding: 20px;
-
-}
-nav{
-    display: flex;
-    justify-content: center;
-    color: #d4bbbb;
-    padding: 10px;
-
-
-}
-nav a{
-    color: rgb(96, 111, 126);
-    text-decoration: none;
-    padding: 10px 20px;
-
+/* Cabeçalho */
+header {
+  background-color: #584c4c70;
+  color: rgb(12, 15, 17);
+  text-align: center;
+  padding: 20px;
 }
 
-main{
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-
-
-}
-footer{
-    background-color: #333;
-    color: rgb(100, 97, 94);
-    text-align: center;
-    padding: 10px;
-
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #e8e8e8;
+  padding: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
+nav a {
+  color: rgb(96, 111, 126);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Conteúdo principal */
+main {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: rgb(200, 200, 200);
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
